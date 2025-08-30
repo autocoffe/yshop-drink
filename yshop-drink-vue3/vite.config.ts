@@ -20,6 +20,15 @@ export default ({ command, mode }: ConfigEnv): UserConfig => {
   } else {
     env = loadEnv(mode, root)
   }
+  
+  // 调试信息
+  console.log('Vite config - mode:', mode)
+  console.log('Vite config - command:', command)
+  console.log('Vite config - VITE_BASE_URL:', env.VITE_BASE_URL)
+  console.log('Vite config - VITE_API_URL:', env.VITE_API_URL)
+  console.log('Vite config - process.argv[3]:', process.argv[3])
+  console.log('Vite config - process.argv[4]:', process.argv[4])
+  
   return {
     base: env.VITE_BASE_PATH,
     root: root,

@@ -25,4 +25,9 @@ const config: {
   default_headers: 'application/json'
 }
 
+// 调试信息
+console.log('VITE_BASE_URL:', import.meta.env.VITE_BASE_URL)
+console.log('VITE_API_URL:', import.meta.env.VITE_API_URL)
+console.log('Final base_url:', config.base_url)
+
 export { config }
