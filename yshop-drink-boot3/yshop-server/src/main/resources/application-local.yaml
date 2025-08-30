@@ -48,12 +48,12 @@ spring:
         master:
           url: jdbc:mysql://127.0.0.1:3306/yixiang-drink-open?useSSL=false&serverTimezone=Asia/Shanghai&allowPublicKeyRetrieval=true&nullCatalogMeansCurrent=true # MySQL Connector/J 8.X 连接的示例
           username: root
-          password: root
+          password: ydlx@123
         slave: # 模拟从库，可根据自己需要修改
           lazy: true # 开启懒加载，保证启动速度
           url: jdbc:mysql://127.0.0.1:3306/yixiang-drink-open?useSSL=false&serverTimezone=Asia/Shanghai&allowPublicKeyRetrieval=true&nullCatalogMeansCurrent=true
           username: root
-          password: root
+          password: ydlx@123
 
   # Redis 配置。Redisson 默认的配置足够使用，一般不需要进行调优
   data:
