@@ -144,6 +144,9 @@ function healthCheck() {
 
 # 部署
 function deploy() {
+    if [ ! -d "$BASE_PATH" ]; then
+        mkdir -p $BASE_PATH
+    fi
     cd $BASE_PATH
     # 备份原 jar
     backup

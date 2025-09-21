@@ -17,6 +17,12 @@
 SET NAMES utf8mb4;
 SET FOREIGN_KEY_CHECKS = 0;
 
+-- 创建数据库
+CREATE DATABASE IF NOT EXISTS `yixiang-drink-open` CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+
+-- 使用数据库
+USE yixiang-drink-open;
+
 -- ----------------------------
 -- Table structure for infra_api_access_log
 -- ----------------------------
